@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.88.1">
+  <title>Weather App</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+  <link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+  <meta name="theme-color" content="#7952b3">
+
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="https://getbootstrap.com/docs/5.1/examples/cover/cover.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.1/examples/sign-in/signin.css" rel="stylesheet">
+
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="">Weather App</h3>
+      </div>
+    </header>
+
+    <main class="form-signin">
+      <form action="/" method="post">
+        <h1 class="h3 mb-3 fw-normal">Enter your city below</h1>
+
+        <div class="form-floating">
+          <input type="text" class="form-control" id="floatingInput cityInput" placeholder="Enter city" name="cityName" autocomplete="off" style="border-bottom-left-radius: 0;border-bottom-right-radius: 0;">
+          <label for="floatingInput cityInput" style="color: #D3D3D3; text-shadow:0 0 black;">City Name: </label>
+        </div>
+        <div class="form-floating">
+          <select class="form-select" id="floatingSelectGrid unit" aria-label="Floating label select example" name="unit" style="border-top-left-radius: 0;border-top-right-radius: 0;">
+            <option value="Metric" selected>Celsius</option>
+            <option value="Imperial">Fahrenheit</option>
+            <option value="Default">Kelvin</option>
+          </select>
+          <label for="floatingSelectGrid unit" id="unit" style="color: #D3D3D3; text-shadow:0 0 black;">Temperature Unit: </label>
+        </div>
+        <button class="btn btn-lg btn-secondary fw-bold border-white bg-white" style="margin-top:50px; padding-left:50px; padding-right:50px;" type="submit" name="button">Go</button>
+      </form>
+    </main>
+
+    <footer class="mt-auto text-white-50">
+      <p>&copy 2022 SΛNKET</p>
+    </footer>
+  </div>
+
+
+
+</body>
+
+</html>

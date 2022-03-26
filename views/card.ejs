@@ -1,0 +1,21 @@
+<%- include("partials/header") -%>
+
+<!-- Card -->
+
+<div class="card mb-3 position-absolute top-50 start-50 translate-middle " style="max-width: 540px;">
+  <div class="row g-0" style="width: 500px;text-align:center;">
+    <div class="h-100 p-5 text-white bg-dark rounded-3">
+      <div>
+        <img src=<%= imageURL %> class="img-fluid rounded-start" alt="Temperature Image">
+      </div>
+      <div>
+        <h1><%= temp %>&deg <%= unitString %></h1>
+      </div>
+      <div class="col-md-6" style="margin: auto;">
+        Weather is Currently <%= weatherDescription %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("partials/footer") -%>
